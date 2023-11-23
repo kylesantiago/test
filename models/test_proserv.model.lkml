@@ -2,6 +2,7 @@ connection: "test-proserv"
 
 # include all the views
 include: "/views/**/*.view.lkml"
+include: "/dashboard/**/*.dashboard.lookml"
 
 datagroup: test_proserv_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
