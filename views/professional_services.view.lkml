@@ -34,7 +34,7 @@ view: professional_services {
     sql: ${TABLE}.assignees ;;
     action: {
       label: "Comment Feedback"
-      url: "https://asia-east2-silent-kite-405712.cloudfunctions.net/test_hours_approval"
+      url: "https://asia-east2-silent-kite-405712.cloudfunctions.net/test_comments"
       param: {
         name: "assignee"
         value: "{{ value }}"
