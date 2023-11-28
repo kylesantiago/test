@@ -32,6 +32,25 @@ view: professional_services {
   dimension: assignees {
     type: string
     sql: ${TABLE}.assignees ;;
+    action: {
+      label: "Comment Feedback"
+      url: "https://asia-east2-silent-kite-405712.cloudfunctions.net/test_hours_approval"
+      param: {
+        name: "assignee"
+        value: "{{ value }}"
+      }
+      user_attribute_param: {
+        user_attribute:  email
+        name: "email"
+      }
+      form_param: {
+        name:  "feed_val"
+        type: textarea
+        label:  "Comments and Feedback"
+        required:  yes
+      }
+    }
+
   }
   dimension: date_created {
     type: string
