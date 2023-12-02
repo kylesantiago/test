@@ -7,7 +7,7 @@ view: professional_services {
     type: string
     sql: ${TABLE}.id ;;
     action: {
-      label: "Approve hours"
+      label: "Reject hours"
       url: "https://asia-east2-silent-kite-405712.cloudfunctions.net/test_hours_approval"
       param: {
         name: "id"
@@ -16,11 +16,7 @@ view: professional_services {
       form_param: {
         name:  "app_val"
         type: select
-        label:  "Hour Approval"
-        option: {
-          name:  "Approved"
-          label:  "Approve"
-        }
+        label:  "Hour Rejection"
         option: {
           name:  "Rejected"
           label:  "Reject"
@@ -28,10 +24,6 @@ view: professional_services {
         required:  yes
       }
     }
-  }
-  dimension: assignees {
-    type: string
-    sql: ${TABLE}.assignees ;;
     action: {
       label: "Comment Feedback"
       url: "https://asia-east2-silent-kite-405712.cloudfunctions.net/test_comments"
@@ -50,7 +42,10 @@ view: professional_services {
         required:  yes
       }
     }
-
+  }
+  dimension: assignees {
+    type: string
+    sql: ${TABLE}.assignees ;;
   }
   dimension: date_created {
     type: string
