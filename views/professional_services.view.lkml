@@ -41,6 +41,32 @@ view: professional_services {
         label:  "Comments and Feedback"
         required:  yes
       }
+      form_param: {
+        name:  "rate_val"
+        type: select
+        label:  "Rating"
+        required:  yes
+        option: {
+          name:  "1"
+          label:  "1"
+        }
+        option: {
+          name:  "2"
+          label:  "2"
+        }
+        option: {
+          name:  "3"
+          label:  "3"
+        }
+        option: {
+          name:  "4"
+          label:  "4"
+        }
+        option: {
+          name:  "5"
+          label:  "5"
+        }
+      }
     }
   }
   dimension: assignees {
