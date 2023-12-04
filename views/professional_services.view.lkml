@@ -36,12 +36,6 @@ view: professional_services {
         name: "email"
       }
       form_param: {
-        name:  "feed_val"
-        type: textarea
-        label:  "Comments and Feedback"
-        required:  yes
-      }
-      form_param: {
         name:  "rate_val"
         type: select
         label:  "Rating"
@@ -67,6 +61,13 @@ view: professional_services {
           label:  "5"
         }
       }
+      form_param: {
+        name:  "feed_val"
+        type: textarea
+        label:  "Comments and Feedback"
+        required:  yes
+      }
+
     }
   }
   dimension: assignees {
