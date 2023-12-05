@@ -67,7 +67,10 @@ view: professional_services {
         label:  "Comments and Feedback"
         required:  yes
       }
-
+    }
+    link: {
+      label: "Comment"
+      url: "http://127.0.0.1:8000/"
     }
   }
   dimension: assignees {
